@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio Profesional del Dr. Choque Vargas Julio Cesar - Doctoris Scientiae, Docente Universitario Asociado UNA Puno, Past Decano CCP y Ex Director de Escuela Profesional de Contabilidad.">
+  <meta name="keywords" content="Dr. Choque Vargas Julio Cesar, UNA Puno, Ciencias Contables, CPC, Contador Público Colegiado, Auditoría, Tributación, NIIF">
+  <title>Dr. CHOQUE VARGAS JULIO CESAR | Docente Asociado • Past Decano CCP • Ex Director</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              slate: '#1e293b',
+              gold: '#eab308',
+              emerald: '#10b981',
+              blue: '#2563eb'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Chart.js CDN for Interactive Dashboards -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-900">
+
+  <!-- ======================================================================== -->
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR (TRANSPARENTE / MINIMALISTA / RESPONSIVE)   -->
+  <!-- ======================================================================== -->
+  <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2.5 sm:py-4 px-3 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <!-- Identidad & Logo (Responsive) -->
+      <a href="#inicio" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-bold text-base sm:text-lg shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform flex-shrink-0">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div class="min-w-0">
+          <span class="block text-xs sm:text-base font-extrabold tracking-tight text-white group-hover:text-amber-400 transition-colors uppercase truncate max-w-[210px] sm:max-w-none">
+            <span class="sm:hidden">Dr. Choque Vargas</span>
+            <span class="hidden sm:inline">Dr. CHOQUE VARGAS JULIO CESAR</span>
+          </span>
+          <span class="block text-[9px] sm:text-[11px] font-mono text-amber-400/90 tracking-wider truncate">
+            DOCENTE UNIVERSITARIO • PAST DECANO CCP • EX DIRECTOR
+          </span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación: SOLO Inicio, Sobre Mí, CV -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-200">
+        <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+        <a href="#sobre-mi" class="hover:text-amber-400 transition-colors">Sobre Mí</a>
+        <button type="button" class="open-cv-modal hover:text-amber-400 transition-colors flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-700/80 hover:border-amber-400/50 bg-slate-900/40 backdrop-blur-md">
+          <i class="fa-regular fa-file-pdf text-red-400"></i>
+          <span>CV</span>
+        </button>
+      </nav>
+
+      <!-- Botón Menú Móvil -->
+      <button id="mobileMenuBtn" type="button" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg hover:bg-slate-800/60 focus:outline-none flex-shrink-0" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars-staggered text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobileMenu" class="hidden md:hidden mt-2 pt-2 bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-2xl p-3 space-y-2 text-sm shadow-2xl">
+      <a href="#inicio" class="block text-slate-200 hover:text-amber-400 font-medium py-1.5 px-3 rounded-xl hover:bg-slate-800/80">Inicio</a>
+      <a href="#sobre-mi" class="block text-slate-200 hover:text-amber-400 font-medium py-1.5 px-3 rounded-xl hover:bg-slate-800/80">Sobre Mí</a>
+      <button type="button" class="open-cv-modal w-full text-left text-slate-200 hover:text-amber-400 font-medium py-1.5 px-3 rounded-xl hover:bg-slate-800/80 flex items-center gap-2">
+        <i class="fa-regular fa-file-pdf text-red-400"></i> Ver CV
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================== -->
+    <!-- 1. PORTADA DE IMPACTO (HERO LIMPIO, NÍTIDO Y RESALTANTE)                 -->
+    <!-- ======================================================================== -->
+    <section id="inicio" class="relative min-h-[calc(100vh-20px)] flex flex-col justify-between pt-20 sm:pt-24 pb-6 sm:pb-8 px-3 sm:px-6 lg:px-8 overflow-hidden">
+      <!-- Fondo Dinámico (fondo2.jpg formal) -->
+      <div id="heroBgContainer" class="hero-bg-container">
+        <!-- Renderizado dinámicamente con imágenes en imagenes/fondo*.jpg -->
+      </div>
+
+      <!-- Gradiente sutil para máxima nitidez -->
+      <div class="absolute inset-0 gradient-overlay-hero z-10 pointer-events-none"></div>
+
+      <!-- Cuadrícula Financiera Discreta Reactiva al Cursor -->
+      <div id="financialGrid" class="financial-grid-overlay" aria-hidden="true"></div>
+
+      <!-- Contenido Principal: Doctor a un lado (Desktop) + Información Principal -->
+      <div class="relative z-20 max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center pt-2 sm:pt-4 lg:pt-8">
+        
+        <!-- LADO IZQUIERDO: Imagen de Cuerpo Completo (Visible SOLO en Desktop lg+, desaparece en móviles para máxima adaptabilidad) -->
+        <div class="hidden lg:flex lg:col-span-5 justify-center lg:justify-start relative">
+          <div class="relative max-w-[340px] sm:max-w-[420px] lg:max-w-[460px] w-full flex justify-center">
+            <img 
+              src="imagenes/cuerpo_completo.png" 
+              alt="Dr. CHOQUE VARGAS JULIO CESAR" 
+              class="doctor-hero-img w-auto h-[530px] lg:h-[620px] max-h-[78vh] object-contain object-bottom"
+            >
+          </div>
+        </div>
+
+        <!-- LADO DERECHO: Nombre del Doctor, Grado y Propuesta de Valor (Full width en móviles) -->
+        <div class="col-span-12 lg:col-span-7 text-left pl-0 lg:pl-4 space-y-4 sm:space-y-5">
+          <!-- Badge de Especialidad Académica & Colegiatura -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-slate-900/80 border border-amber-400/40 text-amber-300 text-[10px] sm:text-xs font-mono font-semibold backdrop-blur-md shadow-lg max-w-full">
+            <i class="fa-solid fa-graduation-cap text-amber-400 flex-shrink-0"></i>
+            <span class="truncate">DOCENTE UNIVERSITARIO • PAST DECANO CCP • EX DIRECTOR DE ESCUELA</span>
+          </div>
+
+          <!-- Nombre del Doctor (Resaltante e Imponente) -->
+          <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight uppercase break-words">
+            Dr. CHOQUE VARGAS <br>
+            <span class="gradient-text-gold">JULIO CESAR</span>
+          </h1>
+
+          <!-- Descripción Oficial Destacada -->
+          <p class="text-xs sm:text-base lg:text-lg text-slate-300 font-normal leading-relaxed max-w-xl">
+            <strong>Doctoris Scientiae</strong> y <strong>Docente Asociado</strong> en la UNA Puno, <strong>Past Decano</strong> del Colegio de Contadores Públicos y <strong>Ex Director</strong> de la Escuela Profesional de Contabilidad. Máster por la <strong>Universidad Autónoma de Madrid (España)</strong>.
+          </p>
+
+          <!-- Botones de Acción Inmediatos (Adaptados a móvil y escritorio) -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1 sm:pt-2">
+            <a href="#contacto" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-slate-950 font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-amber-500/30 hover:scale-105 transition-all text-center">
+              <i class="fa-solid fa-calendar-check text-sm"></i>
+              <span>Agendar Asesoría</span>
+            </a>
+
+            <button type="button" class="open-cv-modal inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-white font-semibold text-xs border border-slate-700/80 hover:border-amber-400/40 transition-all backdrop-blur-md text-center">
+              <i class="fa-regular fa-file-pdf text-red-400"></i>
+              <span>Ver CV Ejecutivo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================================================================== -->
+      <!-- BARRA INFERIOR INSTITUCIONAL (UNA PUNO, FACULTAD Y COLEGIO)          -->
+      <!-- Inspirado exactamente en la barra con logos de referencia            -->
+      <!-- ==================================================================== -->
+      <div class="relative z-30 max-w-7xl mx-auto w-full mt-4 sm:mt-6">
+        <div class="institutional-bar p-2 sm:p-4 grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-slate-700/60 gap-1 sm:gap-0">
+          
+          <!-- Institución 1: Universidad Nacional del Altiplano -->
+          <div class="institutional-bar-item flex items-center gap-3 sm:gap-4 px-2 sm:px-5 py-2">
+            <div class="w-9 h-9 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="imagenes/Logo_UNAP-Photoroom.png" 
+                alt="Logo Universidad Nacional del Altiplano" 
+                class="institutional-logo max-h-9 sm:max-h-14 max-w-9 sm:max-w-14 object-contain"
+              >
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-xs sm:text-sm font-extrabold text-white tracking-tight uppercase leading-snug truncate sm:whitespace-normal">
+                Universidad Nacional del Altiplano
+              </h3>
+              <p class="text-[10px] sm:text-[11px] text-amber-400 font-mono font-medium mt-0.5 truncate">
+                UNA Puno • Docente Asociado & Ex Contador General
+              </p>
+            </div>
+          </div>
+
+          <!-- Institución 2: Facultad de Ciencias Contables -->
+          <div class="institutional-bar-item flex items-center gap-3 sm:gap-4 px-2 sm:px-5 py-2">
+            <div class="w-9 h-9 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="imagenes/logo_fac_contador-Photoroom.png" 
+                alt="Logo Facultad de Ciencias Contables" 
+                class="institutional-logo max-h-9 sm:max-h-14 max-w-9 sm:max-w-14 object-contain"
+              >
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-xs sm:text-sm font-extrabold text-white tracking-tight uppercase leading-snug truncate sm:whitespace-normal">
+                Escuela Profesional de Contabilidad
+              </h3>
+              <p class="text-[10px] sm:text-[11px] text-blue-400 font-mono font-medium mt-0.5 truncate">
+                Ex Director de Escuela • UNA Puno
+              </p>
+            </div>
+          </div>
+
+          <!-- Institución 3: Colegio de Contadores Públicos -->
+          <div class="institutional-bar-item flex items-center gap-3 sm:gap-4 px-2 sm:px-5 py-2">
+            <div class="w-9 h-9 sm:w-14 sm:h-14 flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="imagenes/logo_cole_contadores-Photoroom.png" 
+                alt="Logo Colegio de Contadores Públicos" 
+                class="institutional-logo max-h-9 sm:max-h-14 max-w-9 sm:max-w-14 object-contain"
+              >
+            </div>
+            <div class="min-w-0">
+              <h3 class="text-xs sm:text-sm font-extrabold text-white tracking-tight uppercase leading-snug truncate sm:whitespace-normal">
+                Colegio de Contadores Públicos
+              </h3>
+              <p class="text-[10px] sm:text-[11px] text-emerald-400 font-mono font-medium mt-0.5 truncate">
+                Past Decano • Miembro Colegiado Habilitado
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Selector sutil de ambiente/fondos -->
+        <div class="flex items-center justify-end gap-2 mt-2 px-2 text-[11px] text-slate-400 font-mono">
+          <span class="hidden sm:inline">Fondos:</span>
+          <div id="bgThumbsContainer" class="flex items-center gap-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================== -->
+    <!-- 2. SOBRE MÍ Y CREDENCIALES (PERFIL PROFESIONAL)                          -->
+    <!-- ======================================================================== -->
+    <section id="sobre-mi" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto">
+        <!-- Encabezado de Sección -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-user-tie"></i> Perfil Profesional
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Sobre Mí y Credenciales Académicas
+          </h2>
+          <p class="text-slate-400 mt-3 text-base">
+            Trayectoria distinguida en docencia universitaria, consultoría tributaria y alta dirección financiera.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <!-- Columna Fotografía de Perfil (Visible SOLO en Desktop, oculta en móviles para no alargar la pantalla) -->
+          <div class="hidden lg:flex lg:col-span-5 flex-col items-center">
+            <div class="relative w-full max-w-md">
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500 via-blue-500 to-emerald-600 rounded-3xl blur-lg opacity-30"></div>
+              
+              <div class="relative bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+                <!-- Imagen Profesional / perfil.png -->
+                <div class="h-96 w-full bg-gradient-to-b from-slate-700 via-slate-800 to-slate-900 flex flex-col items-center justify-end p-6 text-center relative overflow-hidden">
+                  <div class="absolute inset-0 opacity-20">
+                    <img src="imagenes/fondo2.jpg" alt="Fondo oficina" class="w-full h-full object-cover">
+                  </div>
+                  <img 
+                    src="imagenes/perfil.png" 
+                    alt="Dr. CHOQUE VARGAS JULIO CESAR" 
+                    class="relative z-10 w-64 h-64 object-contain object-bottom drop-shadow-2xl mb-2"
+                  >
+                  <h3 class="relative z-10 text-lg font-bold text-white uppercase">Dr. CHOQUE VARGAS JULIO CESAR</h3>
+                  <p class="relative z-10 text-amber-400 text-xs font-mono font-semibold">Doctoris Scientiae • Past Decano CCP • Docente Asociado</p>
+                </div>
+
+                <!-- Footer de la tarjeta con instituciones -->
+                <div class="p-4 bg-slate-900/90 border-t border-slate-800 flex items-center justify-between text-xs">
+                  <span class="text-slate-400 font-mono">Estado: <strong class="text-emerald-400 font-bold">Habilitado</strong></span>
+                  <button type="button" class="open-cv-modal text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1.5">
+                    <i class="fa-regular fa-file-pdf"></i> Ver Resumen Curricular
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Resumen Ejecutivo y Respaldos Académicos (Full width en móvil) -->
+          <div class="col-span-12 lg:col-span-7 space-y-4 sm:space-y-6">
+            <!-- Mini-badge de perfil para móviles (sustituye a la foto grande en pantallas pequeñas) -->
+            <div class="flex lg:hidden items-center gap-3.5 p-3 rounded-2xl bg-slate-800/80 border border-slate-700/80">
+              <div class="w-11 h-11 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center text-lg font-bold flex-shrink-0">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="min-w-0">
+                <h4 class="text-xs font-bold text-white uppercase truncate">Dr. CHOQUE VARGAS JULIO CESAR</h4>
+                <p class="text-[11px] text-amber-400 font-mono truncate">Docente Asociado • Past Decano CCP</p>
+                <span class="inline-block text-[10px] text-emerald-400 font-mono">Ex Director Escuela Contabilidad • UNA Puno</span>
+              </div>
+            </div>
+            <div class="glass-card-dark p-6 sm:p-7 rounded-2xl border border-slate-800">
+              <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-bullseye text-amber-400"></i>
+                <span>Trayectoria Académica & Liderazgo Institucional</span>
+              </h3>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                El <strong>Dr. Julio César Choque Vargas</strong> es <strong>Doctoris Scientiae en Contabilidad y Administración</strong> por la Universidad Nacional del Altiplano (UNA Puno), con <strong>Máster Universitario Oficial en Desarrollo Económico y Políticas Públicas por la Universidad Autónoma de Madrid (España)</strong>, Magíster en Auditoría y Tributación, y Segunda Especialidad en Didáctica Universitaria.
+              </p>
+              <p class="text-slate-300 leading-relaxed text-sm sm:text-base mt-3">
+                Cuenta con una destacada trayectoria en la educación superior y en la gestión institucional: es <strong>Docente Asociado</strong> a tiempo completo en la UNA Puno, ha ejercido la <strong>Dirección de la Escuela Profesional de Contabilidad</strong>, el decanato como <strong>Past Decano del Colegio de Contadores Públicos</strong>, y la jefatura como <strong>Contador General</strong> de la Universidad Nacional del Altiplano.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+                  <i class="fa-solid fa-chalkboard-user mr-1.5 text-amber-400"></i> Docente Universitario Asociado (UNA Puno)
+                </span>
+                <span class="px-3 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+                  <i class="fa-solid fa-landmark mr-1.5 text-emerald-400"></i> Past Decano del Colegio de Contadores
+                </span>
+                <span class="px-3 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+                  <i class="fa-solid fa-building-columns mr-1.5 text-blue-400"></i> Ex Director Escuela Profesional Contabilidad
+                </span>
+                <span class="px-3 py-1 text-xs rounded-lg bg-slate-800 text-slate-300 border border-slate-700">
+                  <i class="fa-solid fa-calculator mr-1.5 text-purple-400"></i> Ex Contador General UNA Puno
+                </span>
+              </div>
+            </div>
+
+            <!-- Respaldo Institucional y Grados Oficiales (Grid) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Tarjeta 1: Grado Doctoral & Máster Madrid -->
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-3.5">
+                <div class="p-2.5 rounded-lg bg-amber-400/10 text-amber-400 text-lg flex-shrink-0">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Doctorado & Máster Oficial</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Doctoris Scientiae (UNA Puno)</p>
+                  <span class="inline-block mt-1 text-[11px] font-mono text-amber-400 font-semibold">Máster Univ. Autónoma de Madrid (España)</span>
+                </div>
+              </div>
+
+              <!-- Tarjeta 2: Docencia Universitaria -->
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-3.5">
+                <div class="p-2.5 rounded-lg bg-blue-400/10 text-blue-400 text-lg flex-shrink-0">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Docente Universitario</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Docente Ordinario Asociado T.C.</p>
+                  <span class="inline-block mt-1 text-[11px] font-mono text-blue-300">Segunda Especialidad Didáctica Universitaria</span>
+                </div>
+              </div>
+
+              <!-- Tarjeta 3: Dirección de Escuela -->
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-3.5">
+                <div class="p-2.5 rounded-lg bg-emerald-400/10 text-emerald-400 text-lg flex-shrink-0">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Director de Escuela Profesional</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Escuela Profesional de Contabilidad</p>
+                  <span class="inline-block mt-1 text-[11px] font-mono text-emerald-400">Facultad de Ciencias Contables (UNA Puno)</span>
+                </div>
+              </div>
+
+              <!-- Tarjeta 4: Decanato Gremial -->
+              <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-3.5">
+                <div class="p-2.5 rounded-lg bg-purple-400/10 text-purple-400 text-lg flex-shrink-0">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Colegio de Contadores Públicos</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Past Decano Departamental</p>
+                  <span class="inline-block mt-1 text-[11px] font-mono text-purple-300">Contador Público Colegiado Habilitado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================== -->
+    <!-- 3. CATÁLOGO DE SERVICIOS                                                 -->
+    <!-- ======================================================================== -->
+    <section id="servicios" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-950">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-list-check"></i> Soluciones Integrales
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Áreas de Especialización y Consultoría
+          </h2>
+          <p class="text-slate-400 mt-3 text-base">
+            Servicios estructurados para asesoría corporativa, gestión tributaria y auditoría de alto nivel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Bloque 1 -->
+          <div class="glass-card-dark p-7 rounded-2xl border border-slate-800 hover:border-amber-400/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center text-2xl mb-5">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">1. Gestión Tributaria & SUNAT</h3>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Planeamiento fiscal preventivo, atención a fiscalizaciones y auditorías tributarias.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Planeamiento fiscal estratégico y diagnóstico preventivo.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Liquidación mensual y Declaración Anual del Impuesto a la Renta.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Acompañamiento en fiscalizaciones y requerimientos SUNAT.</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="font-mono text-amber-400 font-semibold">Blindaje Fiscal</span>
+              <a href="#contacto" class="text-slate-300 hover:text-white font-medium">Consultar &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Bloque 2 -->
+          <div class="glass-card-dark p-7 rounded-2xl border border-slate-800 hover:border-blue-400/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-400/10 text-blue-400 flex items-center justify-center text-2xl mb-5">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">2. Contabilidad Financiera & NIIF</h3>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Elaboración y análisis de Estados Financieros bajo normas internacionales.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Formulación de Estados Financieros auditables (NIIF / IFRS).</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Conciliaciones bancarias y cierres contables mensuales.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Registros electrónicos SIRE (RVIE/RCE) y PLE.</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="font-mono text-blue-400 font-semibold">NIIF & Normativa</span>
+              <a href="#contacto" class="text-slate-300 hover:text-white font-medium">Consultar &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Bloque 3 -->
+          <div class="glass-card-dark p-7 rounded-2xl border border-slate-800 hover:border-emerald-400/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center text-2xl mb-5">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">3. Gestión Laboral & Nóminas</h3>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Administración de planillas y cumplimiento estricto con SUNAFIL.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Cálculo de nóminas, gratificaciones, CTS y liquidaciones.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Declaración en T-Registro, PLAME y plataformas AFPnet/ONP.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Auditoría preventiva ante inspecciones laborales.</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="font-mono text-emerald-400 font-semibold">T-Registro & PLAME</span>
+              <a href="#contacto" class="text-slate-300 hover:text-white font-medium">Consultar &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Bloque 4 -->
+          <div class="glass-card-dark p-7 rounded-2xl border border-slate-800 hover:border-purple-400/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-400/10 text-purple-400 flex items-center justify-center text-2xl mb-5">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">4. Finanzas & Costos Corporativos</h3>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Modelos de costos, flujo de caja proyectado y análisis de EBITDA.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Estructura de costos por procesos y órdenes de producción.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Proyección de Flujo de Caja y presupuesto operativo.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Ratios financieros y rentabilidad por centro de costo.</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="font-mono text-purple-400 font-semibold">Rentabilidad</span>
+              <a href="#contacto" class="text-slate-300 hover:text-white font-medium">Consultar &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Bloque 5 -->
+          <div class="glass-card-dark p-7 rounded-2xl border border-slate-800 hover:border-rose-400/50 transition-all flex flex-col justify-between md:col-span-2">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-rose-400/10 text-rose-400 flex items-center justify-center text-2xl mb-5">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">5. Auditoría, Peritaje & Reconstrucción Contable</h3>
+              <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                Auditorías integrales, control interno y regularización de contabilidades atrasadas.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Auditoría forense y peritaje contable para controversias.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Reconstrucción contable de ejercicios anteriores y rectificatorias.</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Tomas de inventarios físicos y saneamiento patrimonial.</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="font-mono text-rose-400 font-semibold">Auditoría & Control</span>
+              <a href="#contacto" class="text-slate-300 hover:text-white font-medium">Solicitar Diagnóstico &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================== -->
+  <!-- PIE DE PÁGINA (FOOTER)                                                   -->
+  <!-- ======================================================================== -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 pt-12 pb-8 px-4 sm:px-6 lg:px-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-bold text-lg">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-white text-sm uppercase">Dr. CHOQUE VARGAS JULIO CESAR</h4>
+          <p class="text-[11px] font-mono text-amber-400">Doctoris Scientiae | Docente Asociado UNA Puno | Past Decano CCP</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-6 text-slate-400 font-medium text-xs">
+        <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+        <a href="#sobre-mi" class="hover:text-amber-400 transition-colors">Sobre Mí</a>
+        <button type="button" class="open-cv-modal hover:text-amber-400 transition-colors">CV Ejecutivo</button>
+        <a href="#contacto" class="hover:text-amber-400 transition-colors">Contacto</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
+      <div>&copy; 2026 Dr. Choque Vargas Julio Cesar. Todos los derechos reservados.</div>
+      <div class="font-mono">UNA Puno • Facultad de Ciencias Contables • Colegio de Contadores</div>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp Flotante -->
+  <a href="https://wa.me/51987654321?text=Hola%20Dr.%20Choque%20Vargas,%20deseo%20agendar%20una%20asesor%C3%ADa." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl whatsapp-pulse transition-transform hover:scale-110" title="Chatear por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ======================================================================== -->
+  <!-- MODAL: VISOR DE CV EJECUTIVO                                             -->
+  <!-- ======================================================================== -->
+  <div id="cvModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+      <button id="closeCvModal" type="button" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex items-center gap-4 pb-6 border-b border-slate-800">
+        <div class="w-14 h-14 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center text-2xl font-bold">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white uppercase">Dr. CHOQUE VARGAS JULIO CESAR</h3>
+          <p class="text-amber-400 font-mono text-xs font-semibold">Doctoris Scientiae | Past Decano CCP • Ex Director Escuela de Contabilidad</p>
+          <p class="text-slate-400 text-xs">Universidad Nacional del Altiplano (UNA Puno) | Colegio de Contadores Públicos</p>
+        </div>
+      </div>
+
+      <div class="space-y-5 py-6 text-xs sm:text-sm text-slate-300">
+        <div>
+          <h4 class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider mb-2">Formación Académica Oficial (SUNEDU)</h4>
+          <ul class="space-y-1.5 list-disc list-inside">
+            <li><strong>Doctoris Scientiae en Contabilidad y Administración</strong> - Universidad Nacional del Altiplano (UNA Puno).</li>
+            <li><strong>Máster Universitario Oficial en Desarrollo Económico y Políticas Públicas</strong> - Universidad Autónoma de Madrid (España).</li>
+            <li><strong>Magíster Scientiae en Contabilidad y Administración</strong> (Mención: Auditoría y Tributación) - UNA Puno.</li>
+            <li><strong>Segunda Especialización en Didáctica Universitaria</strong> - UNA Puno.</li>
+            <li><strong>Contador Público Colegiado (CPC)</strong> & Bachiller en Ciencias Contables - UNA Puno.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider mb-2">Cargos Directivos & Trayectoria Universitaria</h4>
+          <ul class="space-y-1.5 list-disc list-inside">
+            <li><strong>Docente Universitario Ordinario Asociado (T.C.)</strong> - Universidad Nacional del Altiplano (2012 - Actualidad).</li>
+            <li><strong>Director de la Escuela Profesional de Contabilidad</strong> - Facultad de Ciencias Contables (UNA Puno).</li>
+            <li><strong>Past Decano</strong> - Colegio de Contadores Públicos.</li>
+            <li><strong>Contador General de la UNA Puno</strong> - Jefe de la Oficina de Contaduría General (2010 - 2016).</li>
+            <li><strong>Tesorero CAFAE UNA</strong> - Comité de Administración de Fondos de Asistencia y Estímulo (2010 - 2016).</li>
+            <li><strong>Contador de Programas</strong> - Consorcio Universidad San Ignacio de Loyola (USIL) y Centro de Estudios y Promoción del Desarrollo.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider mb-2">Idiomas</h4>
+          <p class="text-slate-300">
+            <strong>Español / Castellano:</strong> Avanzado (Lengua Materna) &bull; 
+            <strong>Quechua:</strong> Avanzado (Lengua Materna) &bull; 
+            <strong>Inglés:</strong> Intermedio
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+        <button onclick="window.print()" type="button" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs border border-slate-700 flex items-center gap-2">
+          <i class="fa-solid fa-print"></i> Imprimir CV
+        </button>
+        <a href="#contacto" onclick="document.getElementById('cvModal').classList.add('hidden'); document.body.style.overflow='auto';" class="px-5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs uppercase">
+          Contactar
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor Personalizado de Precisión Financiera -->
+  <div id="customCursorDot" class="custom-cursor-dot" aria-hidden="true"></div>
+  <div id="customCursorFollower" class="custom-cursor-follower" aria-hidden="true"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
